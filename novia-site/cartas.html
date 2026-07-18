@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartas · Para mi princesa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="pond-bg" aria-hidden="true"></div>
+
+<main class="page">
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="cartas.html" class="active">Cartas</a>
+    <a href="juegos.html">Juegos</a>
+  </nav>
+
+  <p class="eyebrow">Lo que tenía guardado para vos</p>
+  <h1 class="hero-title" style="font-size:clamp(2.2rem,6vw,3.4rem); margin-bottom:2.2rem;">Mis cartas</h1>
+
+  <div class="cartas-wrap">
+
+    <article class="carta active" data-index="0">
+      <p>Feliz primer mes mi vida jeje, espero que este lugar te guste mucho y espero sepas bien que te amo más que nada. Que sos suficiente y sos la mejor mujer que puede haber en el mundo. No te sientas menos por cualquier cosa que pashe ¿Ti?</p>
+    </article>
+
+    <article class="carta" data-index="1">
+      <p>¿Sabés qué es lo que más me enamora de vos? Que sos vos y ya. Aunque te pasen mil cosas feas seguís siendo la misma buena persona de siempre, y eso es algo a valorar tonta, no sabés lo que vale eso. Te confío mi vida entera y pienso seguir haciéndolo toda la vida.</p>
+      <p>Quiero despertarme con vos, dormirme con vos y soportar lo que venga siempre con vos al lado. Sos vos y nadie más, grabátelo jeje</p>
+    </article>
+
+    <article class="carta" data-index="2">
+      <p class="eyebrow" style="margin-bottom:1rem;">Y además</p>
+      <p>Quiero que te quede clarísimo que para mí sos más que suficiente, sos la mujer más linda, más inteligente y más capaz que puede haber, pase lo que pase.</p>
+      <p>No quiero quedar como un tonto cliche, pero tus chistes malos, tus ocurrencias y la forma en la que me hablás me alegran la mañana y la noche por igual. Fui un tonton por haber dudado tanto tiempo, y eso todavia me duele un poco por que aunque te menti me perdonaste y decidiste amarme igualmente. Muchas gracias mi vida, mi arisita.</p>
+    </article>
+
+    <article class="carta" data-index="3">
+      <p>y una última cosita cuando algo te sale mal y te agarra la angustia, quiero que sepas que no es tu culpa. Un error lo comete cualquiera, es de eso que se aprende. Fuera de cualquier cagada que cometas seguís siendo la mejor, mi arisita hermosa, y no hay error que cambie eso jamás.</p>
+      <p>Así que dejá de hacerte drama por cualquier cosa jeje, que para mí siempre vas a ser la más pro de todas (aunque seas de River). Te amo, así, tal cual sos y te amo muto</p>
+    </article>
+
+  </div>
+
+  <div class="carta-nav">
+    <button class="icon-btn" id="prevBtn" aria-label="Carta anterior">‹</button>
+    <span class="carta-count" id="cartaCount">1 / 4</span>
+    <button class="icon-btn" id="nextBtn" aria-label="Carta siguiente">›</button>
+  </div>
+
+  <div style="margin-top:3rem;">
+    <a class="btn secondary" href="juegos.html">Ahora vamos a jugar →</a>
+  </div>
+</main>
+
+<script src="js/pond.js"></script>
+<script>
+  const cartas = document.querySelectorAll(".carta");
+  const total = cartas.length;
+  let current = 0;
+  const countEl = document.getElementById("cartaCount");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  function render() {
+    cartas.forEach((c, i) => c.classList.toggle("active", i === current));
+    countEl.textContent = `${current + 1} / ${total}`;
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+  }
+
+  prevBtn.addEventListener("click", () => { if (current > 0) { current--; render(); } });
+  nextBtn.addEventListener("click", () => { if (current < total - 1) { current++; render(); } });
+
+  render();
+</script>
+</body>
+</html>

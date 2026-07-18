@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juegos · Para mi princesa</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="pond-bg" aria-hidden="true"></div>
+
+<main class="page">
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="cartas.html">Cartas</a>
+    <a href="juegos.html" class="active">Juegos</a>
+  </nav>
+
+  <p class="eyebrow">Para que te quedes un rato más</p>
+  <h1 class="hero-title" style="font-size:clamp(2.2rem,6vw,3.4rem); margin-bottom:2.2rem;">A jugar, princesa</h1>
+
+  <div class="games-wrap">
+    <div class="game-tabs">
+      <button class="game-tab active" data-target="panel-pesca">🎣 Pesca un piropo</button>
+      <button class="game-tab" data-target="panel-memoria">💞 Memoria</button>
+      <button class="game-tab" data-target="panel-ruleta">🎡 Ruleta de razones</button>
+    </div>
+
+    <section class="game-panel active" id="panel-pesca">
+      <div class="game-card">
+        <h2>Pesca un piropo</h2>
+        <p class="game-desc">Tocá un pez del estanque y va a sacar a flote algo lindo para vos.</p>
+        <div class="pond-game" id="pescaZone"></div>
+        <div class="piropo-result" id="piropoResult"></div>
+      </div>
+    </section>
+
+    <section class="game-panel" id="panel-memoria">
+      <div class="game-card">
+        <h2>Memoria de corazones</h2>
+        <p class="game-desc">Encontrá las parejas por un kiss.</p>
+        <div class="memory-grid" id="memGrid"></div>
+        <p class="mem-status" id="memStatus"></p>
+      </div>
+    </section>
+
+    <section class="game-panel" id="panel-ruleta">
+      <div class="game-card">
+        <h2>Ruleta de razones</h2>
+        <p class="game-desc">Girá la ruleta y descubrí una razón por la que te amo.</p>
+        <div class="wheel-zone">
+          <div class="wheel-wrap">
+            <div class="wheel-pointer"></div>
+            <div class="wheel" id="wheel"></div>
+          </div>
+          <button class="btn" id="spinBtn">Girar</button>
+          <p class="piropo-result" id="ruletaResult"></p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div style="margin-top:3rem;">
+    <a class="btn secondary" href="cartas.html">← Volver a las cartas</a>
+  </div>
+</main>
+
+<footer class="sign">te amo, mi vida.</footer>
+
+<script src="js/pond.js"></script>
+<script src="js/games.js"></script>
+</body>
+</html>
