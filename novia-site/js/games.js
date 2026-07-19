@@ -1,26 +1,26 @@
 // ---------- Datos ----------
 const PIROPOS = [
-  "Sos mi persona favorita para hablar boludeces y de la vida misma jeje.",
-  "Cuando te reís me alegrás hasta el peor de los malos humores, tonta.",
-  "Confío en vos como no confié en nadie, y pienso seguir haciéndolo toda la vida.",
-  "Sos muy graciosa y tierna hasta cuando no te das cuenta, y eso me enamora cada día más.",
-  "Con vos hasta un mensaje al mediodía me cambia la semana entera jeje.",
+  "Sos mi persona favorita para hablar boludeces y de la vida misma jeje",
+  "Cuando te reís me alegrás hasta el peor de los malos humores",
+  "Confío en vos como no confié en nadie, y pienso seguir haciéndolo toda la vida",
+  "Sos muy graciosa y tierna hasta cuando no te das cuenta, y eso me enamora cada día más",
+  "Con vos hasta un mensaje al mediodía me cambia la semana entera jeje",
   "Sos la más linda, la más inteligente y la más pro que hay",
-  "Quiero envejecer viéndote todas las mañanas.",
-  "Sos mi arisita, y aunque seas de River siempre vas a ser lo mejor que me pasó Bv",
+  "Quiero envejecer viéndote todas las mañanas",
+  "Sos mi arisita, y aunque seas de River siempre vas a ser lo mejor que me pasó",
 ];
 
 const RAZONES = [
-  "Porque sos vos con quien quiero levantarme todos los días.",
-  "Porque tu forma simple de hablarme me desarma por completo.",
-  "Porque nunca dejás de ser buena persona aunque te pasen cosas malas.",
-  "Porque me hacés reír hasta en mis peores días jeje.",
-  "Porque quiero que seas la madre de mis hijos y no me imagino a otra persona.",
-  "Porque sos auténtica",
-  "Porque tus ocurrencias me alegran la mañana y la noche",
-  "Porque te tengo, y te voy a tener, toda la confianza de mi vida.",
-  "Porque con vos hasta las cosas malas se sienten más livianas.",
-  "Porque sos suficiente. Más que suficiente. Siempre",
+  "Porque sos vos con quien quiero levantarme todos los dias",
+  "Porque tu forma de hablarme me desarma toda jeje",
+  "Porque aunque te pasen mil cosas nunca dejas de tener ese corazon tan lindo",
+  "Porque me haces reir hasta cuando estoy teniendo un dia muy feo",
+  "Porque quiero que seas la madre de mis hijos, poke no me imagino un futuro sin vos",
+  "Porque nunca intentaste ser alguien que no sos",
+  "Porque tus ocurrencias siempre me terminan alegrando el dia",
+  "Porque en vos confio como nunca confie en nadie",
+  "Porque con vos hasta los problemas pesan un poquito menos",
+  "Porque simplemente sos vos"
 ];
 
 // ---------- Tabs ----------
